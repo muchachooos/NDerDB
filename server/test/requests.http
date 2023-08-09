@@ -1,0 +1,31 @@
+POST localhost:8080/save_string
+
+aaddfff
+
+###
+GET localhost:8080/get_string?id=d57eb4ee-1477-4128-8781-77d17a38fff3
+
+###
+POST localhost:8080/create_db
+Content-Type: application/json
+
+{
+  "nameDB": "some_name_DB",
+  "fields": [
+    {
+      "field_name": "id",
+      "field_type": "varchar",
+      "field_size": 22
+    },
+    {
+      "field_name": "login",
+      "field_type": "varchar",
+      "field_size": 22
+    },
+    {
+      "field_name": "password",
+      "field_type": "varchar",
+      "field_size": 33
+    }
+  ]
+}
